@@ -1,0 +1,29 @@
+import MaleyLean.Papers.MinimalConditionsForAdmissibleConstruction.APlusResidualGateLedger
+
+namespace MaleyLean
+namespace Papers
+namespace MinimalConditionsForAdmissibleConstruction
+
+#eval kernelAPlusResidualGateAnchors
+#eval kernelAPlusResidualGateRequiredInputs
+#eval kernelAPlusResidualGateClosureRoutes
+#eval kernelAPlusResidualGateSuppliedFlags
+#eval kernelAPlusResidualGatePopulatedBool
+#eval kernelAPlusResidualGateAllSuppliedBool
+#eval kernelAPlusFinalAPlusCurrentlyClosedBool
+
+#print axioms kernelAPlusResidualGateRows_count_eq
+#print axioms kernelAPlusResidualGateObligations_match
+#print axioms kernelAPlusResidualGateAnchors_match_progress
+#print axioms kernelAPlusResidualGateSuppliedFlags_eq
+#print axioms kernelAPlusResidualGatePopulatedBool_eq_true
+#print axioms kernelAPlusResidualGateAllSuppliedBool_eq_true
+#print axioms kernelAPlusAllResidualGatesSupplied_vacuous
+#print axioms KernelAPlusFinalAPlusCertificate.auditComplete_holds
+#print axioms kernelAPlusFinalAPlusCertificate_of_residualGates
+#print axioms kernelAPlusFinalAPlusCurrentlyClosedBool_eq_true
+#print axioms kernelAPlusResidualGateLedgerAuditComplete_holds
+
+end MinimalConditionsForAdmissibleConstruction
+end Papers
+end MaleyLean

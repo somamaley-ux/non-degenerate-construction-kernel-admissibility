@@ -1,0 +1,24 @@
+import MaleyLean.Papers.MinimalConditionsForAdmissibleConstruction.APlusAudit
+
+namespace MaleyLean
+namespace Papers
+namespace MinimalConditionsForAdmissibleConstruction
+
+#eval kernelAPlusObligationTitles
+#eval kernelAPlusObligationTitlesDuplicateFreeBool
+#eval kernelAPlusObligationTitlesPopulatedBool
+
+#print axioms kernelAPlusObligationCount_eq
+#print axioms kernelAPlusObligationTitlesDuplicateFreeBool_eq_true
+#print axioms kernelAPlusObligationTitlesPopulatedBool_eq_true
+#print axioms KernelAPlusAuditCertificate.ofKernelPacketAndUniqueness
+#print axioms KernelAPlusAuditCertificate.auditSurfaceComplete_holds
+#print axioms KernelAPlusAuditCertificate.requires_bivalence
+#print axioms KernelAPlusAuditCertificate.requires_ametric_boundary
+#print axioms KernelAPlusAuditCertificate.requires_standing_reuse
+#print axioms KernelAPlusAuditCertificate.requires_unique_interior
+#print axioms KernelAPlusAuditCertificate.requires_conservation
+
+end MinimalConditionsForAdmissibleConstruction
+end Papers
+end MaleyLean

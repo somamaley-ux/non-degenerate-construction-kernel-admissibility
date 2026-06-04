@@ -1,0 +1,28 @@
+import MaleyLean.Papers.MinimalConditionsForAdmissibleConstruction.APlusSourceCrosswalk
+
+namespace MaleyLean
+namespace Papers
+namespace MinimalConditionsForAdmissibleConstruction
+
+#eval kernelAPlusSourceDocument
+#eval kernelAPlusSourceCrosswalkLabels
+#eval kernelAPlusSourceCrosswalkLeanAnchors
+#eval kernelAPlusSourceCrosswalkStatusLabels
+#eval kernelAPlusHypothesisGateLeanAnchors
+#eval kernelAPlusCorpusClosureLeanAnchors
+#eval kernelAPlusSourceCrosswalkPopulatedBool
+#eval kernelAPlusSourceCrosswalkCompleteBool
+
+#print axioms kernelAPlusSourceDocumentPopulatedBool_eq_true
+#print axioms kernelAPlusSourceCrosswalk_length_eq
+#print axioms kernelAPlusSourceCrosswalk_obligations_match
+#print axioms kernelAPlusSourceCrosswalk_titles_match
+#print axioms kernelAPlusSourceCrosswalkPopulatedBool_eq_true
+#print axioms kernelAPlusSourceCrosswalkCompleteBool_eq_true
+#print axioms kernelAPlusHypothesisGateRows_count_eq
+#print axioms kernelAPlusCorpusClosureRows_count_eq
+#print axioms kernelAPlusSourceCrosswalkAuditComplete_holds
+
+end MinimalConditionsForAdmissibleConstruction
+end Papers
+end MaleyLean

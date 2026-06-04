@@ -1,0 +1,19 @@
+import MaleyLean.Papers.MinimalConditionsForAdmissibleConstruction.APlusCurrentFocus
+
+namespace MaleyLean
+namespace Papers
+namespace MinimalConditionsForAdmissibleConstruction
+
+#eval kernelAPlusCurrentFocusBundle
+
+#print axioms kernelAPlusCurrentFocusBundle_phase_eq
+#print axioms kernelAPlusCurrentFocusBundle_residualGateCount_eq
+#print axioms kernelAPlusCurrentFocusBundle_finalClosed_eq_true
+#print axioms kernelAPlusCurrentFocusBundle_finalTheorem_eq
+#print axioms kernelAPlusCurrentFocusBundle_mathematicalClosurePercent_eq
+#print axioms kernelAPlusCurrentFocusTarget_closes_with_final_a_plus_certificate
+#print axioms kernelAPlusCurrentFocusAuditComplete_holds
+
+end MinimalConditionsForAdmissibleConstruction
+end Papers
+end MaleyLean

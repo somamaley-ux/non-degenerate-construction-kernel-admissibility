@@ -4,12 +4,21 @@ Standalone Lean 4 formalization and A+ audit surface for:
 
 `Non-Degenerate Construction and the Kernel of Admissibility`
 
-The formalization records the strength of the paper result:
+The formalization treats the admissibility kernel as a formal mathematical
+object: a fixed-domain closure structure whose consequence interface is checked
+inside Lean 4. It records the strength of the paper result:
 
+- formal kernel objecthood for admissibility, standing, reference, and
+  irreversibility on a fixed constructional domain;
 - fixed-domain uniqueness of the admissibility kernel;
-- non-derivability from below, with no same-domain governance-equivalent construction beneath the kernel;
+- non-derivability from below, with no governance-free, same-domain construction
+  beneath the kernel;
 - no faithful lower generator and no deeper same-domain invariant;
 - final A+ audit closure.
+
+The Lean layer verifies the kernel structure and downstream consequence
+interface. It does not supply a lower derivation of the kernel, because the
+fixed-domain results rule out such a derivation.
 
 Current A+ posture:
 

@@ -9,10 +9,12 @@ namespace Surface
 Human-facing kernel summary.
 
 The manuscript is represented as the kernel paper for the AASC corpus: the
-fixed-domain admissibility kernel is unique up to governance equivalence, and
-no same-domain construction preserving the same governance work can be derived
-below it.  The A+ audit surface records this at final strength: 31 theorem-spine
-rows closed or audited, with no residual or hypothesis gates.
+admissibility kernel is a formal fixed-domain closure structure for
+admissibility, standing, reference, and irreversibility. It is unique up to
+governance equivalence, and no governance-free, same-domain construction
+preserving the same governance work can be derived below it. The A+ audit
+surface records this at final strength: 31 theorem-spine rows closed or audited,
+with no residual or hypothesis gates.
 -/
 theorem SummaryStatement
     {Act Object : Type}

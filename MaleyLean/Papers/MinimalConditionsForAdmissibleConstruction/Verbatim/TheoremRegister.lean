@@ -10,13 +10,13 @@ def manuscriptTitle : String :=
 /--
 Human-facing role statement for this paper in the AASC corpus.
 
-This is the kernel paper: it states the fixed-domain uniqueness result for
-admissibility, standing, reference, and irreversibility, and records that no
-same-domain, governance-equivalent construction can be derived beneath that
-kernel.
+This is the kernel paper: it presents the admissibility kernel as a formal
+fixed-domain closure structure for admissibility, standing, reference, and
+irreversibility; states fixed-domain uniqueness; and records that no
+governance-free, same-domain construction can be derived beneath that kernel.
 -/
 def manuscriptRole : String :=
-  "Kernel paper: A+ closed fixed-domain uniqueness of the admissibility kernel; nothing governance-equivalent is derivable below it."
+  "Kernel paper: A+ closed formal kernel objecthood, fixed-domain uniqueness, and no governance-free derivation below it."
 
 /-- Human-facing A+ strength claim recorded for the closed audit surface. -/
 def manuscriptAuditStrength : String :=
@@ -122,7 +122,7 @@ theorem manuscriptHasRegisteredTitle :
 
 theorem manuscriptRoleStatesKernelUniqueness :
     manuscriptRole =
-      "Kernel paper: A+ closed fixed-domain uniqueness of the admissibility kernel; nothing governance-equivalent is derivable below it." := by
+      "Kernel paper: A+ closed formal kernel objecthood, fixed-domain uniqueness, and no governance-free derivation below it." := by
   rfl
 
 theorem manuscriptAuditStrengthStatesFinalClosure :

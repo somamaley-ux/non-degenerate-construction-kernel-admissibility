@@ -1,0 +1,17 @@
+import AASC.Instances.KernelPaper.Closure
+
+#print axioms AASC.Instances.KernelPaper.Manuscript.targetAdequacy_forces_kernel_roles
+#print axioms AASC.Instances.KernelPaper.Manuscript.construction_forces_kernel
+#print axioms AASC.Instances.KernelPaper.Manuscript.no_self_faithful_counterexample
+#print axioms AASC.Instances.KernelPaper.Manuscript.ConcreteWitness.adequacyRegime_nondegenerate
+#print axioms AASC.Instances.KernelPaper.Manuscript.ConcreteWitness.endpoint_and_role_occupancy_closure
+#print axioms AASC.Instances.KernelPaper.ManuscriptClosure.raw_trace_governance_requires_explicit_witness
+#print axioms AASC.Instances.KernelPaper.ManuscriptClosure.derivation_presupposes_kernel
+#print axioms AASC.Instances.KernelPaper.ManuscriptClosure.no_faithful_lower_generator
+#print axioms AASC.Instances.KernelPaper.ManuscriptClosure.cross_domain_transport_preserves_reference_and_standing
+#print axioms AASC.Instances.KernelPaper.ManuscriptClosure.mutual_kernel_closure
+#print axioms AASC.Instances.KernelPaper.ManuscriptClosure.no_intermediate_status
+#print axioms AASC.Instances.KernelPaper.ManuscriptClosure.relabeling_invariant_is_constant
+#print axioms AASC.Instances.KernelPaper.ManuscriptClosure.scope_preserving_preserves_standing
+#print axioms AASC.Instances.KernelPaper.ManuscriptClosure.constructional_report_preservation
+#print axioms AASC.Instances.KernelPaper.ManuscriptClosure.main_fixed_domain_exhaustion

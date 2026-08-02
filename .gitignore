@@ -1,0 +1,8 @@
+.lake/
+build/
+*.olean
+*.ilean
+*.c
+*.cpp
+*.o
+*.so

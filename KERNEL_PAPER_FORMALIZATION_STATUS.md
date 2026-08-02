@@ -46,5 +46,8 @@ Lean's `#print axioms`.  Only the approved Lean foundations
 classical status/case-split results use them.  `Checks/KernelPaperSemantic.lean`
 provides independent type-level and witness-level checks.
 
-The focused script passes.  The repository is ready for its first reviewed
-commit and GitHub release; no manuscript edit is included in this repository.
+The focused script passes.  This clean source is published as
+[v0.1.0](https://github.com/somamaley-ux/non-degenerate-construction-kernel-admissibility/releases/tag/v0.1.0)
+on the replacement `main` branch.  No manuscript edit is included in this
+repository.  Historical pre-replacement GitHub release objects were left
+untouched and are not part of the clean `main` or `v0.1.0` source.

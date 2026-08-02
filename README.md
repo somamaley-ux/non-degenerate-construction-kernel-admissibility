@@ -37,3 +37,5 @@ preservation laws needed by a downstream application are explicit inputs.
 They are not hidden inside the kernel result.
 
 See `KERNEL_PAPER_FORMALIZATION_STATUS.md` and `PAPER_REFERENCE.md`.
+
+The clean standalone release is [v0.1.0](https://github.com/somamaley-ux/non-degenerate-construction-kernel-admissibility/releases/tag/v0.1.0).

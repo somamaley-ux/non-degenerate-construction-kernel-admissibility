@@ -1,3 +1,13 @@
+# v0.3.1 — Reference manuscript v51.1
+
+Companion to the publication edition of *Non-Degenerate Construction and the Kernel of Admissibility*. The manuscript presents the necessity construction, exact realization criterion, and original-incidence authorization argument in direct mathematical prose. Its 60 numbered statements, hypotheses, mathematical expressions, and theorem labels are retained.
+
+The Lean definitions, proofs, imports, and audit procedures are byte-identical to v0.3.0. The package version and current manuscript references identify this edition. The complete theorem map and verification record state the formal scope and checked foundations.
+
+The release includes the reference PDF, editable LaTeX project with the Lean source snapshot, a separate Lean source archive, the complete audit record, and checksums.
+
+---
+
 # v0.3.0 — Constructed necessity and exact original realization
 
 Lean companion to the v51 reference edition of *Non-Degenerate Construction and the Kernel of Admissibility*.

@@ -1,6 +1,6 @@
 # Non-Degenerate Construction and the Kernel of Admissibility
 
-The **v0.3.0 Lean companion** to the **v51 reference manuscript** formalizes the mathematical necessity construction and its conservation, representation, and construction consequences.
+The **v0.3.1 Lean companion** to the **v51.1 reference manuscript** formalizes the mathematical necessity construction and its conservation, representation, and construction consequences.
 
 The manuscript establishes Admissibility, Standing, Reference, and Irreversibility as necessary work of non-degenerate determinate objecthood, including unobserved physical incidences. The formal development starts from independently specified original subjects, complete uses, their possible witnesses, and an original incidence relation. It constructs qualification and assessment, proves identity and retention results, and characterizes exactly which representations can retain the original work. The regime's semantic correctness and the criterion for exact reading are proved through this chain, without a supplied four-role or arbitrary-reader correctness certificate.
 
@@ -21,13 +21,13 @@ The five `Extensions/` modules also check canonical status and consumer invarian
 
 ## Start here
 
-- [Reference paper (PDF)](papers/Non_Degenerate_Construction_Kernel_Admissibility_v51.pdf)
+- [Reference paper (PDF)](papers/Non_Degenerate_Construction_Kernel_Admissibility_v51_1.pdf)
 - [Exact theorem map and scope](KERNEL_PAPER_FORMALIZATION_STATUS.md)
 - [Trust policy and verification](TRUST.md)
 - [Release verification record](validation/RELEASE_VERIFICATION.md)
 - [Manuscript identity and checksums](PAPER_REFERENCE.md)
 - [Downstream API guide](COMPATIBILITY.md)
-- [Release v0.3.0 and project archives](https://github.com/somamaley-ux/non-degenerate-construction-kernel-admissibility/releases/tag/v0.3.0)
+- [Release v0.3.1 and project archives](https://github.com/somamaley-ux/non-degenerate-construction-kernel-admissibility/releases/tag/v0.3.1)
 
 ## Verify
 

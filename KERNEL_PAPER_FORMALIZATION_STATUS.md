@@ -1,6 +1,6 @@
 # Reference manuscript and Lean correspondence
 
-**Reference:** v51, 25 September 2026. **Lean companion:** v0.3.0. The supported entry point is [`AASCKernelPaperClean.lean`](AASCKernelPaperClean.lean).
+**Reference:** v51.1, 25 September 2026. **Lean companion:** v0.3.1. The supported entry point is [`AASCKernelPaperClean.lean`](AASCKernelPaperClean.lean).
 
 The repository formalizes the mathematical necessity chain developed around Proposition 2.4 and the subsequent reconstruction and consequences. The starting data are independently specified original subjects, complete uses, dependent witness types, an incidence relation `J`, and an actual witness where positive nonvacuity is required. They contain no A1–A4 certificate, kernel-governance flag, verdict-agreement field, or assertion that a proposed reader is sound.
 

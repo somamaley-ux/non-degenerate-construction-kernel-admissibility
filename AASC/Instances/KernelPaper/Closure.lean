@@ -4,9 +4,10 @@ import AASC.Instances.KernelPaper.Manuscript
 /-!
 # Explicit closure interfaces for the kernel manuscript
 
-This file closes the remaining manuscript-definition gaps around derivation,
-lower generation, status quotients, relabeling, continuation transport, and
-the downstream fixed-domain interface.
+This file provides the original explicit interfaces for derivation, lower
+generation, status quotients, relabeling, continuation transport, and the
+downstream fixed-domain assembly. Current semantic derivations and their
+precise v50 correspondence are listed in KERNEL_PAPER_FORMALIZATION_STATUS.md.
 
 Every non-structural premise is a visible field or theorem argument.  In
 particular, a raw trace is not promoted to a governed construction, a
@@ -39,8 +40,9 @@ structure GovernedConstruction
   reference : R.ReferenceAt (R.source step) target
   standing : R.Standing step
 
-/- A generic raw trace is governed only after an explicit construction witness
-is provided for one of its steps. -/
+/- This predicate asserts a standing use represented in a trace. Its proof
+requires that use witness; it is not an observer-permission condition on the
+actual objecthood of a determinate trace or occurrence. -/
 structure RawTrace (Step : Type w) where
   trace : List Step
 
@@ -149,6 +151,8 @@ structure LowerGovernanceGenerator
   generation : forall step, basis step -> candidate step
   faithful : DerivativeInvariant R candidate
 
+/-- Exclusion for the explicit basis/generation/fidelity package. The reference
+Authorization module separately derives the finite semantic cut theorem. -/
 theorem no_faithful_lower_generator
     {Act : Type u}
     {Target : Type v}
@@ -336,6 +340,8 @@ def StatusInert
     (status : Status) : Prop :=
   StatusEquivalent I status I.admittedStatus
 
+/-- Classical admitted-equivalent or not-admitted-equivalent dichotomy.
+This does not bound arbitrary raw predicate profiles to two values. -/
 theorem no_intermediate_status
     {Step : Type u}
     {Status : Type v}
@@ -522,6 +528,8 @@ structure ConstructionalReport
   admissibility_relevant : Prop
   report_supported : forall step, report step -> support step
 
+/-- Consequence of the explicit report_supported field. The reference
+Authorization.report_from_local_evidence derives support from local checks. -/
 theorem constructional_report_preservation
     {Act : Type u}
     {Target : Type v}
@@ -545,6 +553,9 @@ theorem report_support_exhaustion
         Classical.byContradiction (fun notSupported =>
           noCounterexample ⟨step, reported, notSupported⟩)))
 
+/-- Original represented assembly, including its standing-preservation premise.
+The current manuscript theorem combines the separately mapped constitutive
+and semantic arguments; this name is not a claim to formalize that whole theorem. -/
 theorem main_fixed_domain_exhaustion
     {Act : Type u}
     {Target : Type v}

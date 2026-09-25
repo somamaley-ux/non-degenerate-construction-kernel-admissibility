@@ -1,53 +1,47 @@
-# Kernel-paper formalization status
+# Reference manuscript and Lean correspondence
 
-## Clean standalone target
+**Reference:** v50, 25 September 2026. **Lean release:** v0.2.0. The supported entry point is [`AASCKernelPaperClean.lean`](AASCKernelPaperClean.lean).
 
-The standalone entry point is `AASCKernelPaperClean.lean`.  The reusable
-mathematics is carried in the vendored clean source closure:
+The manuscript's objecthood claim is necessary and includes unobserved determinate incidences. Mechanization checks the represented mathematical arguments; it does not independently establish the universal physical interpretation merely by introducing types or relations. No optional `kernelApplies` premise is introduced.
 
-- `AASC/Instances/KernelPaper/Manuscript.lean`
-- `AASC/Instances/KernelPaper/Closure.lean`
-- the 29 clean AASC core and kernel-witness dependencies imported by them
+## Dependency map
 
-The vendored source contains no project `axiom`, `opaque`, `unsafe`, `sorry`,
-or `admit` declaration.  It has no dependency on the legacy kernel
-repository, AASC-Mathlib, or a conclusion-bearing certificate.
+1. **Constitutive necessity, Proposition 2.4:** the manuscript argues why actual non-degenerate determinate objecthood incurs A1–A4.
+2. **Represented reconstruction, Theorem 3.1:** the original API proves the four functional roles from explicit target-adequacy data. The new foundation module separates actual incidence from existence of a failure boundary and identifies the original occurrence before a verdict is assigned.
+3. **Semantic consequences:** the current modules derive conservation, authorization cuts, quotients, finite symmetric-interface classification, generated closure, and dependency support from the particular premises shown below.
 
-Certificate policy: certificate-named declarations are transparent structures
-with explicit data and proof fields.  They do not contain hidden project
-axioms or pre-proved project conclusions.
+These levels support one theorem chain. Proof checking at the third level does not replace the first level, and its scope does not make kernel governance optional.
 
-## Formalized load-bearing spine
+## Current theorem map
 
-- target adequacy and the four derived kernel roles;
-- failure-mode and route-coordinate exhaustion;
-- act identity, governance equivalence, and faithful redescription;
-- same-act repair exclusion and explicit role-necessity lemmas;
-- bivalent admissibility status and the AMetric boundary;
-- unique admissible interior and standing/reuse conservation interface;
-- derivation presupposition and raw-generation/governance-generation
-  separation;
-- lower-generator exclusion and cross-domain preservation equations;
-- mutual kernel closure and role-package minimality;
-- status-effect quotient case split and relabeling-invariant parameter collapse;
-- scope-preserving continuation, transport closure, admissible operator
-  domains, and constructional report support;
-- an assembled fixed-domain theorem with every continuation law explicit;
-- an inhabited concrete endpoint/role-occupancy witness.
+Declaration names below are relative to the linked module's namespace. Labels are stable manuscript identifiers; numbers refer to v50.
 
-The exact declaration map is maintained in the canonical AASC-Mathlib ledger
-`KERNEL_PAPER_FORMALIZATION_STATUS.md`.
+| Manuscript result | Checked declarations | Exact scope and premises |
+|---|---|---|
+| Definition 2.2; Lemma 3.3 (`core:act-identity`, `core:historical-fixation`) | [Foundation](KernelReference/Foundation.lean): `OriginalPerformance.retainsOriginal_iff_eq`, `OriginalPerformance.changed_occurrence_not_retained`, `OriginalPerformance.changed_conditions_not_retained`, `OriginalPerformance.new_success_does_not_replace_original` | Occurrence, material arrangement, conditions and target identify the original performance independently of its verdict. The later qualifying performance cannot be substituted for an earlier nonqualifying performance. This is not a physical arrow-of-time theorem. |
+| Proposition 2.4; Theorem 3.1 (`core:objecthood`, `core:necessity`) | [TargetAdequacy](AASC/Core/TargetAdequacy.lean), [Manuscript](AASC/Instances/KernelPaper/Manuscript.lean): `targetAdequacy_forces_kernel_roles`, `construction_forces_kernel`; [Foundation](KernelReference/Foundation.lean): `actual_reference_qualifies`, `determinate_actual_reference` | The original role package is reconstructed from represented source/target/verdict data. Actual incidence and its determinacy are separate formal premises. Proposition 2.4's constitutive interpretation remains the manuscript argument. |
+| Definition 3.5; Theorem 3.6 (`core:deletion`, `core:minimality`) | [Foundation](KernelReference/Foundation.lean): `ObservationWork.missing_work_excludes_complete_realization`, `ObservationWork.required_distinction_cannot_be_erased`, concrete bridge examples | Missing work is witnessed against an independently specified required-answer relation. `CompleteFor` here means required-answer coverage, not full adequacy including absence of surplus answers. The erased-distinction theorem is a necessary coverage test, not a machine proof of the four-role constitutive enumeration. |
+| Lemma 4.2; Theorem 4.3 (`core:authorization-cut`, `core:no-lower-generator`) | [Authorization](KernelReference/Authorization.lean): `exists_minimal_authority_ancestor`, `finite_authorization_cut`, `governance_free_has_no_warrant` | Finite node type, acyclic complete support graph, interpreted statements and target-use warrant relation. A globally minimal authoritative ancestor is derived. Sources include normalized nullary inferences. Semantic governance-freedom excludes both authoritative sources and authority-introducing rules; it is not absence of certain vocabulary. |
+| Theorems 6.2–6.3 and 6.9; Corollary 6.4 (`conserv:local`, `conserv:profiles`, `conserv:discordance`, `conserv:universal`) | [DependentConservation](KernelReference/DependentConservation.lean): `output_eq_of_same_bearer_query`, `profile_eq_of_same_bearer`, `all_profiles_eq_of_same_bearer`, `discordant_answer_not_incident` | Result types may depend on the query, with equality transport explicit. Determinacy plus each reader's independent incidence warrant derives agreement for every query. No finite grammar restriction or assumed preservation equation. Bearer and complete query equality must themselves be warranted. |
+| Proposition 6.5 (`conserv:complete-outcome`) | Same module: `completeOutcome_determinate`, `completeOutcome_none_iff`, `complete_outcome_conservation`, `known_result_excludes_absent_outcome` | `none` means absence of every original base incidence. A timeout, unfinished computation, or missing discovered witness does not establish this premise. |
+| Theorem 6.6; Corollary 6.7; Proposition 8.2 (`canonical:unique`, `canonical:consumers`, `status:gate`) | [CanonicalStatus](Extensions/CanonicalStatus.lean): `status_eq_of_determinate` and total/partial/dependent consumer invariance | Unique status at one determinate locus; represented polarity counts require their corresponding witnesses. Equal polarity does not identify different bearers. |
+| Proposition 6.8 (`conserv:checker-determinacy`) | [ProofCheckerExample](Extensions/ProofCheckerExample.lean): `check_sound`, `check_complete`, `derives_determinate`, `check_complete_outcome`, reader-agreement theorems | An explicit indexed-hypothesis/implication-elimination proof system. Soundness is proved from its inference rules, not stored in a structure. Parser correctness and common original parsed bearer remain explicit inputs. |
+| Theorem 8.5; Appendix A.1–A.5 | [StatusDescent](Extensions/StatusDescent.lean): `exact_status_criterion`, `exact_primitive_descent`, `eval_preserves`, `ordinary_observer_preserved`, `generated_boolean_interface_binary` | Exact observer criterion; domain and output congruence for partial primitives; preservation for the displayed unary/binary typed finite syntax with lazy tests. An arbitrary new grammar needs its own preservation proof. |
+| Appendix A.6 (`status:exhaustion`) | [StatusInterfaceBoundary](Extensions/StatusInterfaceBoundary.lean) | A raw API has three predicate profiles while its classical admitted-equivalent/not-admitted-equivalent dichotomy holds. That raw API has not established the same-bearer and original-output warrants required by semantic conservation. |
+| Theorem 8.4 (`status:profile`); Appendix B.1–B.3 (`struct:profile`, `struct:congruence`, `struct:quotient-universal`) | [ContextualQuotient](KernelReference/ContextualQuotient.lean): `classify_eq_iff`, `unique_factorization`, `canonical_profile_realization`, `unique_exact_classifier`, `unique_classifier_isomorphism`, `unique_partial_descent`, `partial_descent_domain_image`, `original_contexts_derive_partial_congruence`, `unique_partial_descent_of_original_contexts` | Arbitrary dependent observation profiles. The quotient and the uniquely commuting maps are constructed. Partial descent retains original definedness and output classes. The original-context criterion derives congruence from an independently interpreted domain test and all pulled-back optional output observations; it covers one-hole contexts or a justified tuple profile. Completeness of the chosen observations for a particular original task is a domain obligation. |
+| Appendix B.4–B.5 (`struct:application-totality`, `struct:interior-closure`) | [ApplicationInterior](KernelReference/ApplicationInterior.lean): `evaluation_has_original_graph`, `licensed_result_unique`, `identity_application_evaluates`, `generated_closed`, `generated_least`, `generated_iff_finite_stage` | Typed standing carriers and fixed partial operation graphs. Identity availability is explicit. The complete application domain contains exactly licensed applications. The full standing carrier is greatest within that carrier; it is not derived from an arbitrary ambient safety problem. Finite-arity closure is constructed, and an arbitrary seed need not generate the full interior. |
+| Appendix B.8 and selected B.9 consequences (`struct:equality-pattern`, `struct:ametric`) | [EqualityPatterns](KernelReference/EqualityPatterns.lean): `finite_partial_equiv_extends`, `samePattern_iff_permutation`, `invariant_unique_factorization`, `partition_realized_iff_embedding`, `partition_realized_iff_block_count`, `invariant_binary_unique_normal_form`, `no_invariant_strict_total_order`, `invariant_unary_constant`, `no_permutation_fixed_point` | Finite tuple index, arbitrary carrier, full carrier-permutation invariance. Orbit classification includes empty and finite carriers without an infinitude assumption. Finite partition realization is equivalent to its block count fitting the finite carrier; the general embedding criterion also applies. Binary observations have a unique diagonal/off-diagonal normal form on a nontrivial carrier, and no strict total order is invariant under every permutation. Full permutation symmetry is additional to determinacy. |
+| Appendix B.11–B.14 (`struct:support-conservation`, `struct:local-global`, `struct:trajectory`, `struct:report-soundness`) | [Authorization](KernelReference/Authorization.lean): `supported_iff_all_ancestors`, `failed_ancestor_blocks`, `local_soundness_global`, `retained_support_iff`, `retained_failure_blocks_descendant`, `report_from_local_evidence` | Support is inductively generated. Ancestor equivalence uses a finite acyclic graph. Local soundness is supplied per rule; global soundness is derived. Retention requires all old predecessor lists, not just old edges. Reports require coverage of all original ancestors and their actual local checks. |
+| Theorem 7.1 (`main:kernel-exhaustion`) | The preceding checked components support the written assembly | No single theorem is advertised as a machine proof of the entire constitutive and mathematical manuscript. The original `main_fixed_domain_exhaustion` is a represented-role assembly with an explicit standing-preservation premise; its name does not change that scope. |
 
-## Trust boundary
+## Written arguments and application obligations
 
-`Checks/KernelPaperTrust.lean` audits the load-bearing declarations with
-Lean's `#print axioms`.  Only the approved Lean foundations
-`propext`, `Classical.choice`, and `Quot.sound` occur, and only the
-classical status/case-split results use them.  `Checks/KernelPaperSemantic.lean`
-provides independent type-level and witness-level checks.
+The repository does not certify a chosen physical interpretation, identify the complete original query family automatically, or turn an arbitrary erasing map into a faithful realization. Actual bearer identity, complete query identity, each original result warrant, and the completeness of support dependencies are the relevant domain obligations. They are not an extra permission for the kernel to govern determinate objects.
 
-The focused script passes.  This clean source is published as
-[v0.1.0](https://github.com/somamaley-ux/non-degenerate-construction-kernel-admissibility/releases/tag/v0.1.0)
-on the replacement `main` branch.  No manuscript edit is included in this
-repository.  Historical pre-replacement GitHub release objects were left
-untouched and are not part of the clean `main` or `v0.1.0` source.
+The finite typed-context language-to-congruence construction, product-of-sort-quotients identification, comparison groupoid/zigzag presentation in B.6, and the remaining metric and role-reindexing consequences retain their manuscript proofs except where a specifically named current declaration is listed. The finite dependency theorem does not classify ungrounded infinite derivations or prove liveness. See the module comments for the precise formal interfaces.
+
+## Trust and provenance
+
+[TRUST.md](TRUST.md) describes the whole-project audit. [PAPER_REFERENCE.md](PAPER_REFERENCE.md) fixes the exact PDF and archive identities. [COMPATIBILITY.md](COMPATIBILITY.md) explains the original names retained for downstream imports and the current semantic routes.
+
+Standard Lean foundations do not supply a missing domain warrant. Conversely, the presence of an explicit domain premise is not by itself circularity: what matters is whether the advertised conclusion is derived from that premise or has already been assumed. The current map makes that distinction inspectable.

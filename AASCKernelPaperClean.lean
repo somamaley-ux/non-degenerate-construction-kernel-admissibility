@@ -1,12 +1,16 @@
 import AASC.Instances.KernelPaper.Closure
+import Extensions
+import KernelReference
 
 /-!
 # Clean formalization of Non-Degenerate Construction and the Kernel of
 # Admissibility
 
-This is the standalone paper target.  It imports only the clean reusable
-AASC kernel modules.  The legacy sunflower translation and the pinned
-standalone kernel package are not imported here.
+This is the supported reference-paper target. It imports the existing AASC
+API, the five semantic/interface extensions, and the v50 KernelReference
+mathematics. The example below is the original represented-role assembly;
+it is not a declaration of the whole constitutive manuscript theorem.
+See KERNEL_PAPER_FORMALIZATION_STATUS.md for exact proof correspondence.
 -/
 
 open AASC

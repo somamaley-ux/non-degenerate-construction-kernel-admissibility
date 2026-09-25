@@ -52,8 +52,10 @@ def Failure (R : Regime Act Target Step) (step : Step) : Prop :=
   Not (R.Standing step)
 
 /--
-Nondegeneracy requires an actual standing step and an actual boundary step.
-It is not an abstract flag and does not assert any endpoint-fiber proposition.
+This API name requires both an actual standing step and an actual boundary
+step. It is not needed for every local actual-incidence theorem. The reference
+layer names positive and boundary witnesses separately. This predicate does
+not assert any endpoint-fiber proposition.
 -/
 def Nondegenerate (R : Regime Act Target Step) : Prop :=
   exists standing boundary,

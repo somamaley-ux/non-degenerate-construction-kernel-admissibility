@@ -32,7 +32,9 @@ def AdmissibleAt
     (scope : Scope) : Prop :=
   Exists (X.incidence carrier scope)
 
-/-- A genuine boundary exists: some carrier-scope pair has no incidence. -/
+/-- Compatibility name for a failure boundary: some carrier-scope pair has no
+incidence. This does not require an actual positive incidence. The reference
+layer separates HasActualIncidence, HasFailureBoundary, and HasBothWitnesses. -/
 def Nondegenerate
     {Carrier : Type u}
     {Scope : Type v}

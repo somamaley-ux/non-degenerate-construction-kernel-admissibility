@@ -6,3 +6,6 @@ build/
 *.cpp
 *.o
 *.so
+
+validation/run/
+release/

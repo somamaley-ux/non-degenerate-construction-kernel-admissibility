@@ -7,29 +7,18 @@ import AASC.Instances.KernelPaper.Witness
 import AASC.Instances.KernelPaper.RoleOccupancyClosure
 
 /-!
-# The complete kernel-paper spine
+# Represented kernel roles and compatibility interfaces
 
-This file is the clean manuscript-facing layer for the latest kernel paper.
+This module reconstructs the functional kernel roles from explicit source,
+target and verdict data. It also retains the original route, continuation,
+and role-package interfaces used by downstream imports.
 
-The important separation is deliberate:
-
-* `RawStepSequence` contains only a trace;
-* `TargetAdequacy.Regime` contains explicit target, endpoint, and verdict
-  functions;
-* kernel roles are constructed from those functions;
-* continuation, route coverage, report deployment, and role occupancy are
-  never smuggled into a certificate.  Certificate-named structures in the
-  dependency closure are transparent witness packages: their data and proof
-  fields are visible, and their consequences are proved by theorems.  When
-  one of those structures is used, its maps and laws occur as visible theorem
-  arguments or as fields of the corresponding data-bearing mathematical
-  object.
-
-Thus this file formalizes the manuscript's theorem spine without declaring an
-axiom, opaque theorem, `sorry`, or conclusion-bearing project certificate.
-Theorems about generic continuation and additional foundational conditions are
-stated with their actual preservation hypotheses; they are not advertised as
-consequences of objecthood alone.
+Structure proof fields are explicit premises. In particular, represented
+preservation data are not an independent derivation of physical fidelity or
+of the current manuscript's constitutive objecthood argument. The current
+semantic conservation, original-occurrence identity, authorization cut,
+quotient, and dependency results are in Extensions and KernelReference.
+See KERNEL_PAPER_FORMALIZATION_STATUS.md for the exact v50 correspondence.
 -/
 
 namespace AASC
@@ -47,7 +36,7 @@ universe u v w
 structure RawStepSequence (Act Step : Type u) where
   trace : List Step
 
-/-- The four neutral adequacy clauses used by the manuscript. -/
+/-- Four represented adequacy clauses determined by the regime functions. -/
 structure TargetAdequacyProfile
     {Act : Type u}
     {Target : Type v}
@@ -106,7 +95,8 @@ theorem targetAdequacy_forces_kernel_roles
       standingFailureDisjoint := fun step => R.standing_failure_disjoint step
       actTimeIrreversible := R.verdict_change_forces_distinct_step }
 
-/-- The manuscript's non-degenerate target class is an actual witness pair. -/
+/-- Compatibility abbreviation requiring both a standing and a boundary use.
+Actual positive incidence is separately named in the reference layer. -/
 abbrev NondegenerateConstruction
     {Act : Type u}
     {Target : Type v}
@@ -114,7 +104,9 @@ abbrev NondegenerateConstruction
     (R : Regime Act Target Step) : Prop :=
   R.Nondegenerate
 
-/-- The full constitutive theorem for the neutral target-adequate regime. -/
+/-- Functional-role reconstruction for the explicit target-adequate regime.
+This does not independently establish the constitutive interpretation of that
+regime as every actual determinate object. -/
 theorem construction_forces_kernel
     {Act : Type u}
     {Target : Type v}
@@ -129,9 +121,9 @@ theorem construction_forces_kernel
     ⟨targetAdequacy R, targetAdequacy_forces_kernel_roles R,
       nondegenerate⟩
 
-/-! ## The finite route map in Section 2 -/
+/-! ## The original represented finite route map -/
 
-/-- The five standard manuscript failure modes. -/
+/-- The five cases of this represented failure-mode enumeration. -/
 inductive StandardFailureMode where
   | targetLoss
   | stepStatusLoss
@@ -156,7 +148,7 @@ theorem standardFailureMode_exhaustion :
   | governanceEquivalentCollapse =>
       exact Or.inr (Or.inr (Or.inr (Or.inr rfl)))
 
-/-- The manuscript's three neutral route coordinates. -/
+/-- The three coordinates of the represented route enumeration. -/
 inductive RouteCoordinate where
   | target
   | eligibility
@@ -175,7 +167,9 @@ theorem routeCoordinate_exhaustion :
 
 /-! ## Act identity and governance equivalence -/
 
-/-- The manuscript's admissibility-relevant equality of two concrete steps. -/
+/-- Compatibility relation including represented verdict equality. The current
+reference module OriginalPerformance identifies original data before a verdict;
+this older relation is not used to derive semantic result conservation. -/
 def ActIdentity
     {Act : Type u}
     {Target : Type v}
@@ -380,9 +374,9 @@ theorem no_distinct_faithful_interior
 
 /-! ## Continuation, reuse, and conservation
 
-The manuscript's reuse and transport claims need a continuation relation.  The
-relation is explicit here, and the preservation law is an explicit argument;
-neither is placed inside a purported kernel certificate.
+These compatibility interfaces take a continuation relation and its
+preservation law explicitly. The current semantic derivation from separate
+original-output warrants is in KernelReference.DependentConservation.
 -/
 
 def ReuseStable
@@ -676,9 +670,10 @@ theorem boundary_closure_dichotomy
         Classical.byContradiction (fun notEquivalent =>
           noChange ⟨left, right, identity, notEquivalent⟩)))
 
-/-- A role omission is an explicit failure of one of the neutral kernel
-clauses.  It is a predicate on a candidate regime, not a certificate that
-silently supplies an omission. -/
+/-- Compatibility predicate on a represented regime. In particular its
+nonstanding-step disjunct is an ordinary failed use; that is not deletion of
+a kernel function. Required-work deletion is treated by the reference
+ObservationWork module and the manuscript constitutive argument. -/
 def KernelRoleOmission
     {Act : Type u}
     {Target : Type v}
@@ -702,6 +697,8 @@ structure SameRegimeFaithfulCounterexample
   missingRole : KernelRoleOmission S
   notGovernanceEquivalent : Not (GovernanceEquivalent R S)
 
+/-- The explicit non-equivalence field excludes self-equivalence. This is not
+a separate proof of functional role minimality. -/
 theorem no_self_faithful_counterexample
     {Act : Type u}
     {Target : Type v}
@@ -730,7 +727,7 @@ theorem mechanization_boundary
     DerivedKernelRoles R :=
   targetAdequacy_forces_kernel_roles R
 
-/-! ## A concrete full-paper witness -/
+/-! ## A concrete represented-regime witness -/
 
 namespace ConcreteWitness
 

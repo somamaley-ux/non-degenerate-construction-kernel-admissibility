@@ -1,5 +1,5 @@
 name = "AASCKernelPaperClean"
-version = "0.1.0"
+version = "0.2.0"
 defaultTargets = ["AASC", "AASCKernelPaperClean"]
 
 [[require]]
@@ -13,3 +13,9 @@ roots = ["AASC"]
 
 [[lean_lib]]
 name = "AASCKernelPaperClean"
+
+[[lean_lib]]
+name = "Extensions"
+
+[[lean_lib]]
+name = "KernelReference"

@@ -1,12 +1,14 @@
 # Downstream compatibility and theorem routing
 
-Existing import paths and declaration signatures are retained. Use `import AASCKernelPaperClean` for the complete supported reference surface, `import KernelReference` for the reference mathematics, or a specific module for a smaller dependency.
+The v0.3.2 companion supports the v51.2 reference manuscript. Existing import paths and declaration signatures are retained. Use `import AASCKernelPaperClean` for the complete supported reference surface, `import KernelReference` for the reference mathematics, or a specific module for a smaller dependency.
 
 ## Current necessity route
 
 For the mathematical content of Proposition 2.4, use `KernelReference.IncidenceNecessity`, `KernelReference.NecessityRealization`, and `KernelReference.ObjecthoodNecessity` together. The starting relation and positive witness supply the semantic construction; identity, retention, exact realization, and witnessed defects supply its scope. `ObjecthoodNecessity.objecthood_necessity_semantic` assembles this construction and the universal encoding criterion. The manuscript establishes how these original data and derived functions express actual identity-bearing incidence and the four kernel roles.
 
-Do not treat a retained `DerivedKernelRoles` record by itself as this complete derivation. Its presence remains compatible with the older represented API; the current chain additionally proves the regime's agreement with independently specified original qualification and the candidate-realization criterion.
+The complete derivation combines the represented `DerivedKernelRoles` record with the proved agreement of the constructed regime with original qualification, identity and retention results, and the candidate-realization criterion. The manuscript's constitutive argument separately defends why actual determinate incidence incurs the target commitments. A reconstruction from those commitments cannot establish its own conceptual premises.
+
+In this interpretation, a role is instantiated by the work performed in actual realization. Admissibility concerns the original conditions obtaining jointly, and faithful use answers to those conditions. A4 imposes an obligation on any claim offered about the incidence; it adds no premise that a claimant or checker exists. Functional non-omissibility preserves the complete job while allowing overlapping roles and compressed implementations. It is not a unique partition or independence result for four axioms.
 
 | Existing surface | Exact meaning retained | Current route |
 |---|---|---|
@@ -27,6 +29,6 @@ Do not treat a retained `DerivedKernelRoles` record by itself as this complete d
 
 Downstream applications establish the original subject, complete question, incidence or use condition, and relevant contexts before claiming preservation. Original semantic identity may quotient redundant coordinate or gauge descriptions. Identity probes apply to that original identity; adding them retrospectively to a task that claimed only coarser observations changes the task.
 
-Qualification for some experimental outcome does not establish a chosen practical success criterion. Supply the latter's original witness relation, or its one-point predicate representation. A settled negative qualification excludes every original witness. A missing message or unfinished search supplies no such evidence.
+Every observation relevant to the original construction problem must be covered before complete preservation is claimed. A relevant omitted question requires a richer frame and a renewed completeness claim. Qualification for some experimental outcome does not establish a chosen practical success criterion. Supply the latter's original witness relation, or its one-point predicate representation. A settled negative qualification excludes every original witness. A missing message or unfinished search supplies no such evidence.
 
-No existing downstream conclusion changes merely because additional files are imported. Use the current route when claiming its stronger derivation and discharge the corresponding premises. Classification uniqueness does not imply occupant uniqueness; primitive semantic comparisons need a separate finite-zigzag completeness proof; finite congruence and authorization do not establish arbitrary infinite-use or liveness claims. Full carrier-permutation symmetry is not inferred from object identity alone.
+No existing downstream conclusion changes merely because additional files are imported. Use the current route when claiming its stronger derivation and discharge the corresponding premises. Exact classification uniqueness concerns the same fixed observation content and does not imply occupant uniqueness or a unique substantive policy; primitive semantic comparisons need a separate finite-zigzag completeness proof; finite congruence and authorization do not establish arbitrary infinite-use or liveness claims. Full carrier-permutation symmetry is not inferred from object identity alone.

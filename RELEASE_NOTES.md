@@ -1,3 +1,15 @@
+# v0.3.2 — Incidence, functional necessity, and exact realization
+
+Companion to the v51.2 reference edition of *Non-Degenerate Construction and the Kernel of Admissibility*.
+
+The manuscript states instantiation as work performed in actual determinate realization, independently of an observer or separate mechanism. An unobserved-contact example identifies losses of relata, qualification, joint satisfaction, and original occurrence. Admissibility is located in the original joint conditions; any later description answers to them. Functional necessity permits overlap, distribution, and compression. Exact-realization uniqueness concerns fixed original content.
+
+The necessity argument, reconstruction, and mathematical consequences have explicit dependencies. All 60 numbered statements, mathematical expressions, and 90 label numbers are preserved. No unique-vocabulary or independent-role theorem is asserted. The Lean proof sources and audit procedures are unchanged; the complete audit passes with 911/911 theorem reports across 51 modules.
+
+The release includes the 71-page reference PDF, complete editable manuscript project with the synchronized Lean snapshot, separate Lean source archive, audit evidence, and checksums.
+
+---
+
 # v0.3.1 — Reference manuscript v51.1
 
 Companion to the publication edition of *Non-Degenerate Construction and the Kernel of Admissibility*. The manuscript presents the necessity construction, exact realization criterion, and original-incidence authorization argument in direct mathematical prose. Its 60 numbered statements, hypotheses, mathematical expressions, and theorem labels are retained.

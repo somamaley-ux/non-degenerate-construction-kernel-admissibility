@@ -1,5 +1,7 @@
 # Trust and verification
 
+This policy applies to the v0.3.2 Lean companion and the v51.2 reference manuscript.
+
 ## Proof policy
 
 All published project proofs are Lean declarations with explicit hypotheses. The accepted foundational axiom names are `propext`, `Classical.choice`, and `Quot.sound`. They support extensionality, classical choice, and quotients; they supply no physical or domain-specific premise.
@@ -10,11 +12,15 @@ A structure's proof fields remain hypotheses of theorems using it. In particular
 
 ## What the necessity proofs establish
 
-The new necessity interface takes original semantic subjects, complete uses, dependent witness types, an independently specified incidence relation, and an actual witness for positive nonvacuity. From those data it constructs qualification, its semantic assessment, the assessment regime, and the regime's proved relation to original qualification. The full correspondence to A1–A4 also uses the identity, original-retention, exact-realization, and defect theorems. A represented `DerivedKernelRoles` record alone is insufficient for that correspondence.
+The necessity interface takes original semantic subjects, complete uses, dependent witness types, an independently specified incidence relation, and an actual witness for positive nonvacuity. From those data it constructs qualification, its semantic assessment, the assessment regime, and the regime's proved relation to original qualification. The full correspondence to A1–A4 also uses the identity, original-retention, exact-realization, and defect theorems. A represented `DerivedKernelRoles` record alone is insufficient for that correspondence.
 
 The exact-realization theorem constructs a relational reader and proves its existence equivalent to the original-profile fibre criterion. Exactness is tested, not supplied as an objecthood assumption. The finite authorization bridge interprets warrant through the original incidence relation and extracts an actual witness at the selected cut; it does not assume a kernel conclusion in an authority label. Semantic conservation takes the separate original answer warrants and proves agreement.
 
-The original interpretation of a physical or mathematical domain is justified in that domain and in the manuscript. Lean checks the mathematical necessity implications once the primitive data have that meaning. No observer, assessment convention, or optional governance flag is needed to activate the kernel.
+The manuscript separately defends the constitutive passage from actual determinate incidence to the target commitments. Lean checks the semantic constructions and implications from the independently interpreted original data. The role reconstruction cannot establish its own conceptual premises, and a checked exact-realization theorem does not by itself supply the original interpretation of a physical or mathematical domain.
+
+Instantiation means that the actual realization performs the required work. Admissibility concerns its original conditions obtaining jointly; any faithful use must answer to them. A4 expresses the accountability of any claim offered about that incidence, not the existence of a claimant. No observer, checker, assessment convention, or optional governance flag is needed to activate the kernel.
+
+Functional non-omissibility concerns preservation of the same complete original work. The roles may overlap or share a compressed implementation; four independent axioms or a unique partition of that work are not asserted. Exact readers and quotient classifications have their stated uniqueness for fixed original content. The observation family's completeness and any concrete interpretation remain explicit application obligations.
 
 ## Constructive and classical results
 
@@ -37,7 +43,7 @@ The audit concerns project theorem provenance, not independence of the mathemati
 
 ## Semantic checks
 
-The retained examples and new necessity examples distinguish:
+The semantic examples distinguish:
 
 - positive actual incidence from existence of a failed locus;
 - standing of a failed trial from success at its attempted use;

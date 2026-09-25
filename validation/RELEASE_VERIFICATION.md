@@ -1,23 +1,22 @@
-# v0.3.1 verification
+# v0.3.2 verification
 
-The canonical verification script passed on the frozen proof, configuration, and script inputs on 25 September 2026.
+The canonical build and audit passed on the frozen proof, configuration, and script inputs on 25 September 2026.
 
 - 54 project Lean source files scanned.
 - All 51 project library modules imported and built.
-- All 2,814 project constants inspected for forbidden declaration kinds, unsafe definitions and placeholders, including private helpers.
+- All 2,814 project constants inspected for forbidden declaration kinds, unsafe definitions, and placeholders, including private helpers.
 - 911 of 911 public project theorem declarations received exact transitive axiom reports.
 - All 15 original named anchors reported exactly once.
 - Only `propext`, `Classical.choice`, and `Quot.sound` occurred.
-- All five original semantic examples compiled; the reference modules also compile their concrete examples and counterexamples.
-- All six report-parser fixtures passed.
-- The source file set and all 58 recorded source/configuration/script hashes remained fixed during verification.
+- Original semantic examples and six report-parser fixtures passed.
+- The source file set and recorded source/configuration/script hashes remained fixed during verification.
 
-The machine-readable [audit record](v0.3.1-audit.json) identifies every audited theorem, defining module, axiom dependency, toolchain, and source hash. Counts include compiler-generated public equation lemmas; they are not counts of independent manuscript results. The [v0.3.0 verification](v0.3.0-verification.md) records the preceding release. The earlier [v0.2.0 verification](v0.2.0-verification.md) and its audit remain historical evidence.
+The machine-readable [audit record](v0.3.2-audit.json) identifies every audited theorem, defining module, axiom dependency, toolchain, and source hash. Counts include generated public equation lemmas, not independent manuscript results. The [v0.3.1 verification](v0.3.1-verification.md) is retained as historical evidence.
 
-## Independent mathematical and publication review
+## Manuscript and interpretation review
 
-Separate review roles checked the necessity construction, universal exact-realization criterion, identity and non-substitution implications, actual-incidence authorization bridge, typed contextual composition, comparison completeness, and reindexing. No hidden A1–A4, kernel-governance, agreement, or global soundness premise supplies these conclusions. Exact realization includes both preservation and reflection, with witnessed omission, surplus, and fibre collision.
+The v51.2 project contains independent hostile and publication reviews, their final disposition, theorem/formula/numbering checks, a clean rebuild comparison, and PDF layout verification. The necessity exposition distinguishes work in the actual incidence from any later account of it. Intrinsic joint satisfaction precedes A4 accountability; functional non-omissibility permits overlap and compression. The reconstruction does not independently establish its conceptual premises.
 
-The v51.1 manuscript package contains the detailed independent reports, publication disposition, stable-number check, clean-build comparison, and PDF inspection record. The necessity chain has checked mathematical content. Its interpretation as actual original physical or mathematical incidence is explicitly defended in the manuscript; particular domain identifications and physical laws retain their own evidential requirements.
+All Lean definitions, proofs, imports, and audit procedures are unchanged from v0.3.1. The package version is the only changed audited configuration input. The documentation makes no new machine-checked claim. All 60 manuscript statements, mathematical expressions, and 90 label numbers are preserved; explanatory and proof prose supplies the explicit interpretation.
 
-The original AASC and Extensions source API is unchanged in this release. All project Lean source files, import umbrellas, and verification scripts are byte-identical to v0.3.0. Only the package version changes among the audited configuration inputs. The supported audit remains `pwsh -NoProfile -File scripts/check-kernel-paper.ps1`.
+The supported audit is `pwsh -NoProfile -File scripts/check-kernel-paper.ps1`.

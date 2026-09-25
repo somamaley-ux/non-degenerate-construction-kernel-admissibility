@@ -2,24 +2,24 @@
 
 **Title:** Non-Degenerate Construction and the Kernel of Admissibility
 **Author:** Amos Jay Maley
-**Edition:** v51.1, 25 September 2026
-**Extent:** 69 pages; 60 numbered statements
-**Lean companion:** v0.3.1
+**Edition:** v51.2, 25 September 2026
+**Extent:** 71 pages; 60 numbered statements
+**Lean companion:** v0.3.2
 
-The current [reference PDF](papers/Non_Degenerate_Construction_Kernel_Admissibility_v51_1.pdf) has SHA-256 `21ffd75f796e0ebf7e12d9bd08a6dc9dc92485f63daba9d363bd919993b715dd`.
+The current [reference PDF](papers/Non_Degenerate_Construction_Kernel_Admissibility_v51_2.pdf) has SHA-256 `0deb632c52c6dfcfc39f3a04a3ae66776bf1436755d101ffe6ba9f5e20bb93ef`.
 
-The [v0.3.1 release](https://github.com/somamaley-ux/non-degenerate-construction-kernel-admissibility/releases/tag/v0.3.1) supplies `Non_Degenerate_Construction_Kernel_Admissibility_v51_1_Project.zip`, containing the PDF, editable LaTeX, included class/style assets, the current Lean source snapshot, proof map, independent review, and validation records. Its exact archive identity is recorded in the release's `SHA256SUMS.txt`; no archive attempts to contain its own hash. Dependency caches and generated Lean build outputs are excluded.
+The [v0.3.2 release](https://github.com/somamaley-ux/non-degenerate-construction-kernel-admissibility/releases/tag/v0.3.2) supplies `Non_Degenerate_Construction_Kernel_Admissibility_v51_2_Project.zip`: PDF, editable LaTeX, class/style assets, Lean source snapshot, proof map, independent review, and validation records. Release `SHA256SUMS.txt` records the exact archive identities. Dependency caches and generated Lean build outputs are excluded.
 
-Proposition 2.4 is accompanied by the mathematical necessity development in Results 2.5–2.9 and the assembled Lean chain. The complete [proof map](KERNEL_PAPER_FORMALIZATION_STATUS.md) states the correspondence and interpretation boundary. All 55 prior numbered statements and all 82 prior label numbers are retained. The two new necessity equations are tagged N1 and N2 so earlier equation references remain stable.
+Proposition 2.4 identifies the required work in independently specified actual incidence. Its contact example and loss tests distinguish that work from a separate observer, checker, or four-component implementation. Results 2.5–2.9 and the assembled Lean chain supply the mathematical development. The [proof map](KERNEL_PAPER_FORMALIZATION_STATUS.md) states the exact correspondence and interpretation boundary.
 
-The reference author details and work-record DOI are retained. The work-record identifier does not assert that this exact edition has been deposited there.
+All 60 numbered statement environments, mathematical expressions, and 90 label numbers are retained from v51.1. The Lean proof sources and audit procedures are unchanged. Explanatory and proof prose makes incidence-level instantiation, joint satisfaction, conditional answer accountability, and proof dependencies explicit.
+
+The author details and work-record DOI are retained. That identifier does not assert that this exact edition has been deposited there.
 
 ## Provenance
 
-The v51 manuscript remains available with [v0.3.0](https://github.com/somamaley-ux/non-degenerate-construction-kernel-admissibility/releases/tag/v0.3.0), PDF SHA-256 `1c413779a2900f3d9e8114b7618a6c917de48156831605c525e40e1ad0d75c43`. Edition v51.1 retains all 60 statement environments, mathematical expressions, and 90 labels from that edition. The Lean source is byte-identical; the prose and companion metadata identify the publication edition.
+The [v51.1 edition](papers/Non_Degenerate_Construction_Kernel_Admissibility_v51_1.pdf) remains available with [v0.3.1](https://github.com/somamaley-ux/non-degenerate-construction-kernel-admissibility/releases/tag/v0.3.1), PDF SHA-256 `21ffd75f796e0ebf7e12d9bd08a6dc9dc92485f63daba9d363bd919993b715dd`.
 
-The v50 PDF is retained in `papers/` as a historical edition. Its SHA-256 is `a81ab696cbdaadb06aa87895c730ca47032fec2190c8489cc047a95d42dec147`. The original v50 project archive remains an immutable asset of [v0.2.0](https://github.com/somamaley-ux/non-degenerate-construction-kernel-admissibility/releases/tag/v0.2.0), SHA-256 `91543500b6a77a5def81a25c73fdab54fe2cbdee230e1264e020839827345db0`.
+Earlier v51 and v50 PDFs and immutable release assets remain available through their original releases. Existing source imports and signatures are retained. The five `Extensions/` modules and eleven `KernelReference/` modules preserve their documented scope and premises.
 
-Existing source imports and signatures are retained. The five `Extensions/` modules originated in the earlier manuscript bundle. The eleven `KernelReference/` modules provide the current reference mathematics. Origin is provenance, not a substitute for a theorem's proof and hypotheses.
-
-Lean is pinned to 4.28.0 and mathlib to `8f9d9cff6bd728b17a24e163c9402775d9e6a365`; the complete dependency manifest is versioned. [Current verification](validation/RELEASE_VERIFICATION.md) records the complete audit.
+Lean is pinned to 4.28.0 and mathlib to `8f9d9cff6bd728b17a24e163c9402775d9e6a365`; the full dependency manifest is versioned. [Current verification](validation/RELEASE_VERIFICATION.md) records the complete audit.

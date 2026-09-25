@@ -1,23 +1,23 @@
-# v0.2.0 verification
+# v0.3.0 verification
 
-The canonical verification script passed on the frozen release inputs on 25 September 2026.
+The canonical verification script passed on the frozen proof, configuration, and script inputs on 25 September 2026.
 
-- 49 project Lean source files scanned.
-- All 46 project library modules imported and built.
-- All 2,655 project constants inspected for forbidden declaration kinds, unsafe definitions and placeholders, including private helpers.
-- 804 of 804 public project theorem declarations received exact transitive axiom reports.
+- 54 project Lean source files scanned.
+- All 51 project library modules imported and built.
+- All 2,814 project constants inspected for forbidden declaration kinds, unsafe definitions and placeholders, including private helpers.
+- 911 of 911 public project theorem declarations received exact transitive axiom reports.
 - All 15 original named anchors reported exactly once.
 - Only `propext`, `Classical.choice`, and `Quot.sound` occurred.
-- All five original semantic examples compiled; new examples compile as part of the reference modules.
-- Six audit-parser fixtures passed, including rejection of missing, duplicate, foreign and unapproved-axiom reports.
-- The source file set and all 53 recorded source/configuration/script hashes remained fixed during verification.
+- All five original semantic examples compiled; the reference modules also compile their concrete examples and counterexamples.
+- All six report-parser fixtures passed.
+- The source file set and all 58 recorded source/configuration/script hashes remained fixed during verification.
 
-The machine-readable [audit record](v0.2.0-audit.json) identifies every audited theorem and its defining module, axiom dependencies, toolchain and source hashes. Counts include compiler-generated public equation lemmas; they are not counts of independent manuscript results.
+The machine-readable [audit record](v0.3.0-audit.json) identifies every audited theorem, defining module, axiom dependency, toolchain, and source hash. Counts include compiler-generated public equation lemmas; they are not counts of independent manuscript results. The earlier [v0.2.0 verification](v0.2.0-verification.md) and its audit remain historical evidence.
 
-## Independent review
+## Independent mathematical and publication review
 
-Separate agents reviewed the new proof modules and the public correspondence map. Review covered independently fixed occurrence identity, the finite globally minimal authorization ancestor, local-to-global support, complete predecessor retention, dependent result transport, observation-quotient uniqueness, original-context congruence, permutation extension, binary normal form, strict-order exclusion, partition realization, and finite-stage generated closure. No mathematical blocker remained after review.
+Separate review roles checked the necessity construction, universal exact-realization criterion, identity and non-substitution implications, actual-incidence authorization bridge, typed contextual composition, comparison completeness, and reindexing. No hidden A1–A4, kernel-governance, agreement, or global soundness premise supplies these conclusions. Exact realization includes both preservation and reflection, with witnessed omission, surplus, and fibre collision.
 
-The publication pass verified the v50 artifact identities and removed stale claims that the original represented API proves the whole current manuscript. Existing AASC mathematical source remains unchanged apart from comments and line-ending normalization; current results are additive. Every original AASC source file was compared with the preceding revision after removing comments and whitespace.
+The v51 manuscript package contains the detailed independent reports, publication disposition, stable-number check, clean-build comparison, and PDF inspection record. The necessity chain has checked mathematical content. Its interpretation as actual original physical or mathematical incidence is explicitly defended in the manuscript; particular domain identifications and physical laws retain their own evidential requirements.
 
-This record supports the stated formal results. The manuscript's constitutive objecthood argument and concrete domain identifications retain the scope described in the [proof map](../KERNEL_PAPER_FORMALIZATION_STATUS.md).
+The original AASC and Extensions source API is unchanged in this release. The five new reference modules are additive; the umbrella import and package version are updated. The supported audit remains `pwsh -NoProfile -File scripts/check-kernel-paper.ps1`.

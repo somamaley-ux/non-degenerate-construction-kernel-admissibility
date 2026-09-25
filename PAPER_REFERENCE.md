@@ -2,19 +2,22 @@
 
 **Title:** Non-Degenerate Construction and the Kernel of Admissibility
 **Author:** Amos Jay Maley
-**Edition:** v50, 25 September 2026
-**Extent:** 61 pages
-**Lean companion release:** v0.2.0
+**Edition:** v51, 25 September 2026
+**Extent:** 69 pages; 60 numbered statements
+**Lean companion:** v0.3.0
 
-| Artifact | SHA-256 |
-|---|---|
-| [`Non_Degenerate_Construction_Kernel_Admissibility_v50.pdf`](papers/Non_Degenerate_Construction_Kernel_Admissibility_v50.pdf) | `a81ab696cbdaadb06aa87895c730ca47032fec2190c8489cc047a95d42dec147` |
-| `Non_Degenerate_Construction_Kernel_Admissibility_v50_Project.zip` | `91543500b6a77a5def81a25c73fdab54fe2cbdee230e1264e020839827345db0` |
+The current [reference PDF](papers/Non_Degenerate_Construction_Kernel_Admissibility_v51.pdf) has SHA-256 `1c413779a2900f3d9e8114b7618a6c917de48156831605c525e40e1ad0d75c43`.
 
-The PDF is committed in `papers/`; the exact original project ZIP is a [release asset](https://github.com/somamaley-ux/non-degenerate-construction-kernel-admissibility/releases/tag/v0.2.0). It includes the manuscript LaTeX and the proof snapshot supplied with v50. Neither artifact has been silently rewritten to describe subsequent mechanization.
+The [v0.3.0 release](https://github.com/somamaley-ux/non-degenerate-construction-kernel-admissibility/releases/tag/v0.3.0) supplies `Non_Degenerate_Construction_Kernel_Admissibility_v51_Project.zip`, containing the PDF, editable LaTeX, included class/style assets, the current Lean source snapshot, proof map, independent review, and validation records. Its exact archive identity is recorded in the release's `SHA256SUMS.txt`; no archive attempts to contain its own hash. Dependency caches and generated Lean build outputs are excluded.
 
-The original v50 archive and its Appendix C document the support bundled with that edition. **The current Lean companion extends that coverage.** In particular it adds the finite semantic authorization-cut proof, dependent-query conservation, general profile quotient results, finite-arity equality-pattern classification, typed generated closure and dependency-DAG support. The current theorem correspondence is [KERNEL_PAPER_FORMALIZATION_STATUS.md](KERNEL_PAPER_FORMALIZATION_STATUS.md); use it for this release, rather than reading the archive's historical proof inventory as the current repository status.
+Proposition 2.4 is accompanied by the mathematical necessity development in Results 2.5–2.9 and the assembled Lean chain. The complete [proof map](KERNEL_PAPER_FORMALIZATION_STATUS.md) states the correspondence and interpretation boundary. All 55 prior numbered statements and all 82 prior label numbers are retained. The two new necessity equations are tagged N1 and N2 so earlier equation references remain stable.
 
-The existing source API is retained from repository revision `8e0516d71f15d4fb86a4ebbaf3adee7ca28e6a70`. The five `Extensions/` files originate in the v50 manuscript support bundle. `KernelReference/` supplies the additional mechanization. Origin is evidence of provenance, not evidence that every theorem in the manuscript has a corresponding Lean declaration.
+The reference author details and work-record DOI are retained. The work-record identifier does not assert that this exact edition has been deposited there.
 
-The toolchain is Lean 4.28.0; mathlib is pinned at `8f9d9cff6bd728b17a24e163c9402775d9e6a365`. The complete dependency manifest is versioned with the project.
+## Provenance
+
+The v50 PDF is retained in `papers/` as a historical edition. Its SHA-256 is `a81ab696cbdaadb06aa87895c730ca47032fec2190c8489cc047a95d42dec147`. The original v50 project archive remains an immutable asset of [v0.2.0](https://github.com/somamaley-ux/non-degenerate-construction-kernel-admissibility/releases/tag/v0.2.0), SHA-256 `91543500b6a77a5def81a25c73fdab54fe2cbdee230e1264e020839827345db0`.
+
+Existing source imports and signatures are retained. The five `Extensions/` modules originated in the earlier manuscript bundle. The eleven `KernelReference/` modules provide the current reference mathematics. Origin is provenance, not a substitute for a theorem's proof and hypotheses.
+
+Lean is pinned to 4.28.0 and mathlib to `8f9d9cff6bd728b17a24e163c9402775d9e6a365`; the complete dependency manifest is versioned. [Current verification](validation/RELEASE_VERIFICATION.md) records the complete audit.
